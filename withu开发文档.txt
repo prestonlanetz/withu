@@ -1,0 +1,107 @@
+Book页面   
+	I、主页面加载后读取本地题库数据，生成JSX全部显示；
+	II、每一本题库显示后，会读取本地错误题库、收藏题、已做题库、题目长度、正确率等信息
+	III、点击题库图片后，myBookCell将已生成的数据传递给父组件（Book组件），显示modal
+	IV、modal显示完毕后，会根据bookId读取本地题库数据bookData，保存在内存中
+	V、点击BookClassChooseBar后，将内存中相应的数据传递给下个NAV 进入做题界面
+
+
+1、服务器与客户端通信状态码约定
+200 密码比对正确
+400 密码错误
+401 用户不存在
+501 服务器或数据库发生错误
+
+2、用到的组件
+	react-native-swiper			//滑动
+	react-native-drawer         		//侧栏
+	react-native-img-cache		//图片缓存
+		依赖：react-native-fetch-blob		
+	react-native-blur 			//背景虚化
+	react-native-svg@4.5.0             //渐变，图形绘制
+	react-native-progress                 //进度条
+	native-base                               //集成的UI组件库
+
+3、本地数据格式
+	3.1、题库信息简介：(简介、各类型题目数量)
+		{
+			key: 'bookInfo',
+                   	id : this.props.bookInfo.id,
+                   	data:{
+                        	bookInfo: this.props.bookInfo ,
+                        	bookSize:      //各类型题目的数量
+                            	{
+                                	imgQs:jsonData.result[0].imgQs.length,     //看图题
+                                	longQs:jsonData.result[0].longQs.length,        //案例题
+                               		shortQs:jsonData.result[0].shortQs.length,          //简答题
+                                	tfQs:jsonData.result[0].tfQs.length,              //判断题
+                                	mulChoice:jsonData.result[0].mulChoice.length,         //多选题
+                                	sinChoice:jsonData.result[0].sinChoice.length       //单选题
+                            }
+                    	}
+		}
+	3.2、 题库数据：
+		{
+			key: 'bookData',
+                        id : this.props.bookInfo.id,
+                        data:{
+                            bookData: {
+				imgQs:[ ],
+				longQs:[ ],
+			     }
+                        },
+		}
+	3.3、收藏题
+		{
+			key: 'bookLikes',
+                        id: this.props.bookInfo.id,
+                        data: {
+                                    imgQs: [],     //看图题
+                                    longQs: [],        //案例题
+                                    shortQs: [],          //简答题
+                                    tfQs: [],              //判断题
+                                    mulChoice: [],         //多选题
+                                    sinChoice: []       //单选题
+                        }
+		}
+	3.4、错题集
+		{
+			key: 'bookError',
+                        id: this.props.bookInfo.id,
+                        data: {
+                                    imgQs: [],     //看图题
+                                    longQs: [],        //案例题
+                                    shortQs: [],          //简答题
+                                    tfQs: [],              //判断题
+                                    mulChoice: [],         //多选题
+                                    sinChoice: []       //单选题
+                        }
+		}
+	3.5、已完成
+		{
+			key: 'bookDone',
+                        id: this.props.bookInfo.id,
+                        data: {
+                                    imgQs: [],     //看图题
+                                    longQs: [],        //案例题
+                                    shortQs: [],          //简答题
+                                    tfQs: [],              //判断题
+                                    mulChoice: [],         //多选题
+                                    sinChoice: []       //单选题
+                        }
+		}
+	3.6   侧栏导航JSX
+		key: 'bookNavJSX',
+                    id : this.props.bookInfo.id,
+                    data:{
+                        JSX:      //各类型题目的数量
+                            {
+                                imgQs:[],     //看图题
+                                longQs:[],        //案例题
+                                shortQs:[],          //简答题
+                                tfQs:[],              //判断题
+                                mulChoice:[],         /多
+                                sinChoice:[]      //单
+                            }
+                    }
+4、

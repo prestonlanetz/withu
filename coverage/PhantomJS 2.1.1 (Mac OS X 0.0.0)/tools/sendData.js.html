@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for tools/sendData.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">tools/</a> sendData.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">11.11% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>2/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">11.11% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>2/18</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * Created by Preston on 2017/4/12.
+ */
+<span class="fstat-no" title="function not covered" >function postData(url,DataString,callback){</span>
+  //创建表单对象
+<span class="cstat-no" title="statement not covered" >  v</span>ar formData = new FormData;
+  //导入表单数据,遍历jsonData对象
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    f</span>ormData.append('clientUpdate',DataString);
+&nbsp;
+  //创建XMLHttpRequest()对象
+<span class="cstat-no" title="statement not covered" >  v</span>ar xhr = new XMLHttpRequest();
+<span class="cstat-no" title="statement not covered" >  xhr.timeout = 8000;  //设置超时时间</span>
+&nbsp;
+  //注册创建连接方法，post方法，url地址,true表示异步
+<span class="cstat-no" title="statement not covered" >  x</span>hr.open('post',url,true);
+  //注册回调函数，当服务器返回数据时执行该函数
+<span class="cstat-no" title="statement not covered" >  x</span>hr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+<span class="cstat-no" title="statement not covered" >  x</span>hr.setRequestHeader("Origin", "localhost:8080");
+&nbsp;
+  // xhr.setRequestHeader("Content-Type", "multipart/form-data");
+  // xhr.setRequestHeader("Content-Type", "text/html;charset=UTF-8");
+<span class="cstat-no" title="statement not covered" >  x</span>hr.onload = <span class="fstat-no" title="function not covered" >(e)=&gt;{</span>
+    //如果返回的状态码为成功
+<span class="cstat-no" title="statement not covered" >    if(xhr.status == 200){</span>
+      // 将服务器返回结果传递给自定义回调函数，并执行
+<span class="cstat-no" title="statement not covered" >      callback(xhr.response);//执行用户定义回调函数</span>
+    }
+    else{
+<span class="cstat-no" title="statement not covered" >      a</span>lert(xhr.status);
+    }
+&nbsp;
+  }
+<span class="cstat-no" title="statement not covered" >  x</span>hr.ontimeout=<span class="fstat-no" title="function not covered" >(e)=&gt;{</span>
+<span class="cstat-no" title="statement not covered" >    a</span>lert('请求超时',e);
+  }
+<span class="cstat-no" title="statement not covered" >  x</span>hr.onerror = <span class="fstat-no" title="function not covered" >(e)=&gt;{</span>
+<span class="cstat-no" title="statement not covered" >    a</span>lert('请求错误',e)
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  x</span>hr.send(formData);
+};
+module.exports = postData;
+&nbsp;
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Apr 20 2017 22:15:36 GMT+0800 (CST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

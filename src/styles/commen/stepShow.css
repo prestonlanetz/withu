@@ -1,0 +1,59 @@
+/*每一小步 展示舞台组件*/
+.stepDivBox{
+  position: absolute;
+  width: 100%;
+  height: 800px;
+}
+.imgBox-middle{
+  position:absolute;
+  width: 100%;
+  height: 500px;
+  top: 100px;
+  transition:all 0.5s ;
+  -moz-transition:all 0.5s ;
+  -webkit-transition:all 0.5s ;
+  -o-transition:all 0.5s ;
+  /*transform:translate(0,-100px);*/
+  opacity: 1;
+}
+.imgBox-top{
+  position:absolute;
+  width: 100%;
+  height: 500px;
+  top: -400px;
+  opacity: 1;
+  transition:all 0.5s ;
+  transform:scale(0.8,0.8);
+}
+.imgBox-bottom{
+  position:absolute;
+  width: 100%;
+  height: 500px;
+  top:700px;
+  opacity: 0;
+  transition:all 0.5s ;
+}
+.tipsStage{
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+.bottomButton{
+  position: absolute;
+  top: 730px;
+  left: 45%;
+  font-size: 30px;
+  color: #2a84d7;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  transform-origin: bottom;
+}
+.bottomButton:active{
+  transform: rotateX(35deg);
+}
+.hidden{
+  display: none;
+}

@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for components/DragBook.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">components/</a> DragBook.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">63% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>63/100</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">65.96% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>31/47</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">60% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>12/20</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">35.29% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>18/51</span>
+      </div>
+      <div class='fl pad1y'>
+        <span class="strong">7 statements, 6 functions, 16 branches</span>
+        <span class="quiet">Ignored</span>  &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * Created by Preston on 2017/4/15.
+ */
+// require('normalize.css/normalize.css');
+require('styles/dragbook.css');
+import createBrowserHistory from 'history/createBrowserHistory';
+const history = createBrowserHistory();
+&nbsp;
+import {BrowserRouter as Router,Route,Link,Switch,Redirect} from 'react-router-dom'
+import cookie from 'react-cookie';
+&nbsp;
+import Step0 from './steps/step0';
+import Step1 from './steps/step1';
+import Step2 from './steps/step2';
+import Step3 from './steps/step3';
+import Step4 from './steps/step4';
+import Step5 from './steps/step5';
+import Step6 from './steps/step6';
+&nbsp;
+&nbsp;
+import React from 'react';
+&nbsp;
+const step = ['原理','单项选择题','多项选择题','判断题','案例题','生成题库','题库介绍'];
+const stepURL = ['/step0','/step1','/step2','/step3','/step4','/step5','/step6'];
+class DragBook extends React.Component {
+<span class="fstat-no" title="function not covered" >  constructor(props)<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span></span></span>
+    super(props);
+<span class="cstat-no" title="statement not covered" >    t</span>his.state={
+        step : 0,  //从0开始,记录当前所在steps
+        stepDown : 0, //记录已经完成了的steps
+&nbsp;
+    }
+&nbsp;
+  }
+&nbsp;
+  goBack()<span class="cstat-no" title="statement not covered" >{</span>  //回到上一步更改操作
+<span class="cstat-no" title="statement not covered" >    if(this.state.step &gt;= 1){</span>
+<span class="cstat-no" title="statement not covered" >      t</span>his.setState({
+        step:this.state.step-1,
+      },<span class="fstat-no" title="function not covered" >()=&gt;{</span>
+<span class="cstat-no" title="statement not covered" >        l</span>et url = "/produce/step" + this.state.step
+<span class="cstat-no" title="statement not covered" >        t</span>his.props.history.push(url);
+      });
+&nbsp;
+    }
+  }
+&nbsp;
+  goForward()<span class="cstat-no" title="statement not covered" >{</span>
+    //设置step和stepDown
+<span class="cstat-no" title="statement not covered" >    if(this.state.step &lt; 6 ){  //如果当前step没有到末尾则当前step+1</span>
+<span class="cstat-no" title="statement not covered" >      t</span>his.setState({
+        step:this.state.step+1,
+      },<span class="fstat-no" title="function not covered" >()=&gt;{</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if(this.state.step &gt;= this.state.stepDown){  //完成当前step操作后，在回调函数中检查当前step是否大于等于已完成的stepDown，大于则将step的值赋给stepDown</span>
+<span class="cstat-no" title="statement not covered" >          t</span>his.setState({
+            stepDown:this.state.step
+          },<span class="fstat-no" title="function not covered" >()=&gt;{</span>
+<span class="cstat-no" title="statement not covered" >              l</span>et url = "/produce/step" + this.state.step
+<span class="cstat-no" title="statement not covered" >              t</span>his.props.history.push(url);
+            }
+            //location.href = '/produce/step' + this.state.step; //刷新本页面，此时Redirect组件会自动根据this.state.step重定向
+            );
+        }
+<span class="cstat-no" title="statement not covered" >        l</span>et url = "/produce/step" + this.state.step
+      });
+    }
+&nbsp;
+    //
+&nbsp;
+  }
+  stepClick(index,e) {  //点击stepNav时切换当前step
+    //如果点击的stepNav的index小于stepDown则切换当前step为index,否则阻止点击行为
+<span class="cstat-no" title="statement not covered" >    if(index &lt;= this.state.stepDown){</span>
+<span class="cstat-no" title="statement not covered" >      t</span>his.setState({
+        step:index,
+      });
+    }else{
+<span class="cstat-no" title="statement not covered" >      e.preventDefault();   //阻止了后面将会执行的点击跳转行为</span>
+    }
+  }
+  render() <span class="cstat-no" title="statement not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    let stepJSX = [];  //存放link标签数组</span>
+<span class="cstat-no" title="statement not covered" >    l</span>et nextStepUrl = "/produce/" + this.state.step
+<span class="cstat-no" title="statement not covered" >    s</span>tep.forEach(<span class="fstat-no" title="function not covered" >(value,index)=&gt;{</span>
+<span class="cstat-no" title="statement not covered" >      l</span>et className = '';
+<span class="cstat-no" title="statement not covered" >      l</span>et toUrl = 'step' + index;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      if(index &lt;= this.state.stepDown){   //根据当前step和已完成的stepDown判断是否追加样式</span>
+<span class="cstat-no" title="statement not covered" >        c</span>lassName = 'nav-step nav-step-down'
+&nbsp;
+      }else <span class="cstat-no" title="statement not covered" >if(index &gt; this.state.stepDown){</span>
+        // toUrl = '/produce/step'+this.state.step;
+<span class="cstat-no" title="statement not covered" >        c</span>lassName = 'nav-step nav-step-inactive'
+&nbsp;
+      }
+<span class="cstat-no" title="statement not covered" >      if(index == this.state.step){</span>
+        // toUrl = '/produce/step'+this.state.step;
+<span class="cstat-no" title="statement not covered" >        c</span>lassName = 'nav-step'
+      }
+<span class="cstat-no" title="statement not covered" >      s</span>tepJSX.push(&lt;Link key={index} to={toUrl} replace className={className} onClick={<span class="fstat-no" title="function not covered" >(e)=&gt;{<span class="cstat-no" title="statement not covered" ></span>t</span>his.stepClick(index,e)}}&gt;&lt;span &gt;{value}&lt;/span&gt;&lt;/Link&gt;)
+    })
+<span class="cstat-no" title="statement not covered" >    r</span>eturn (
+      &lt;Router history={history}&gt;
+      &lt;div className="dragbook"&gt;
+          &lt;div className="topNavBar1"&gt;
+              &lt;button className="topNavBar1-side" onClick={<span class="fstat-no" title="function not covered" >()=&gt;{<span class="cstat-no" title="statement not covered" ></span>t</span>his.goBack()}}&gt;
+                上一步
+              &lt;/button&gt;
+              &lt;div className="topNavBar1-mid"&gt;
+                  &lt;img className="faceImg" src={cookie.load('faceImg')} /&gt;
+                  &lt;span className="trueName"&gt;{cookie.load('trueName')}&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;button className="topNavBar1-side" onClick={<span class="fstat-no" title="function not covered" >()=&gt;{<span class="cstat-no" title="statement not covered" ></span>t</span>his.goForward()}}&gt;
+                下一步
+              &lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div className="topNavBar2"&gt;
+              &lt;div className="linkBox"&gt;
+                {stepJSX}
+              &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div className="stepBox"&gt;
+&nbsp;
+              &lt;Route  path="/produce/step0"  component={Step0}/&gt;
+              &lt;Route  path="/produce/step1"  component={Step1}/&gt;
+              &lt;Route  path="/produce/step2"  component={Step2}/&gt;
+              &lt;Route  path="/produce/step3"  component={Step3}/&gt;
+              &lt;Route  path="/produce/step4"  component={Step4}/&gt;
+              &lt;Route  path="/produce/step5"  component={Step5}/&gt;
+              &lt;Route  path="/produce/step6"  component={Step6}/&gt;
+&nbsp;
+              &lt;Redirect   to="/produce/step0"/&gt;
+&nbsp;
+          &lt;/div&gt;
+&nbsp;
+        &lt;/div&gt;
+&nbsp;
+      &lt;/Router&gt;
+    );
+  }
+}
+DragBook.defaultProps = {
+  history:history
+};
+&nbsp;
+export default DragBook;
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Apr 20 2017 22:15:36 GMT+0800 (CST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
