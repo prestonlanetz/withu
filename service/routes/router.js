@@ -164,35 +164,7 @@ module.exports = {
                             return;
                       }
 
-                      // let newPath = path.join(__dirname,'../resource/',files.clientUpdate.name);
-                      // fs.rename(files.clientUpdate.path,newPath,(err)=>{
-                      //   if(err){
-                      //     console.log('命名错误',err);
-                      //   }
-                      // });
-                        // res.end(util.inspect({fields: fields, files: files}))
-                      //开始对图片进行处理
-                      //   let  sharpNewPath =
-                      // fs.readFile(newPath,(err,content)=>{
-                      //     sharp(content)
-                      //       .resize(200,268)
-                      //       .jpeg()
-                      //       .toFile(newPath)
-                      //       .then(()=>{
-                      //           //规定七牛云空间名
-                      //           let bucket = 'book-cover-from-node';
-                      //           //上传使用的名字
-                      //           let key = files.clientUpdate.name;
-                      //           //本地文件路径
-                      //           let filePath =  newPath;
-                      //           //上传到七牛云
-                      //           upLoadToQiniu(bucket,key,filePath,(ret)=>{
-                      //             let imgQiniuURL = 'http://or2lyh8k3.bkt.clouddn.com/'+ ret.key;
-                      //             let data = {"imgQiniuURL":imgQiniuURL}
-                      //             res.end(JSON.stringify(data));
-                      //           });
-                      //       })
-                      // })
+                      
 
                       //
 
@@ -225,7 +197,6 @@ module.exports = {
                           //将编辑好的数据发送到浏览器，发送完毕后回调函数删除前面上传的数据
                           res.end(imgData,()=>{
                             fs.unlink(files.clientUpdate.path,(err)=>{
-
                             })
                           });
                         })
@@ -247,8 +218,6 @@ module.exports = {
                           })
                           */
                       })
-
-
                 },
   uploadBookInform:(req,res,next)=>{
                       res.setHeader("Access-Control-Allow-Origin", "*")

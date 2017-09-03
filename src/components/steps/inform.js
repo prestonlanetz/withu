@@ -181,7 +181,7 @@ class Inform extends React.Component {
         alert('图片上传失败，请检查网络，再试一次')
       }
 
-    //res为服务器发送数据，包含base64图像
+    //res为服务器发送数据，包含base64图像，浏览器能直接显示base64图像
       imgdata = JSON.parse(res)
 
       let img = "data:image/jpeg;base64," + imgdata.imgbase64
@@ -193,7 +193,6 @@ class Inform extends React.Component {
         });
       }
     });
-
   }
 
   render() {

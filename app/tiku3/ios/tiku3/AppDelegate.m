@@ -8,9 +8,14 @@
  */
 
 #import "AppDelegate.h"
-
+#import <NIMSDK/NIMSDK.h>
+#import "NTESSDKConfigDelegate.h"
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+
+@interface AppDelegate ()
+@property (nonatomic,strong) NTESSDKConfigDelegate *sdkConfigDelegate;
+@end
 
 @implementation AppDelegate
 
@@ -32,7 +37,45 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  
+  [self setupNIMSDK];
+  [self registerAPNs];
+  
   return YES;
+}
+- (void)setupNIMSDK
+{
+  //在注册 NIMSDK appKey 之前先进行配置信息的注册，如是否使用新路径,是否要忽略某些通知，是否需要多端同步未读数
+  self.sdkConfigDelegate = [[NTESSDKConfigDelegate alloc] init];
+  [[NIMSDKConfig sharedConfig] setDelegate:self.sdkConfigDelegate];
+  [[NIMSDKConfig sharedConfig] setShouldSyncUnreadCount:YES];
+  //appkey 是应用的标识，不同应用之间的数据（用户、消息、群组等）是完全隔离的。
+  //注册APP，请将 NIMSDKAppKey 换成您自己申请的App Key
+  [[NIMSDK sharedSDK] registerWithAppID:@"1b14b8f5cb8fff74008b9cb80e4daf19" cerName:@"证书名称"];
+}
+
+#pragma mark - misc
+- (void)registerAPNs
+{
+  [[UIApplication sharedApplication] registerForRemoteNotifications];
+  UIUserNotificationType types = UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert;
+  UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:types categories:nil];
+  [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+}
+
+- (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+  [[NIMSDK sharedSDK] updateApnsToken:deviceToken];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
+  NSLog(@"receive remote notification:  %@", userInfo);
+}
+
+- (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
+{
+  NSLog(@"fail to get apns token :%@",error);
 }
 
 @end
+

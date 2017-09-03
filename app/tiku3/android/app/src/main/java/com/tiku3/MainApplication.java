@@ -3,6 +3,9 @@ package com.tiku3;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.react.rnspinkit.RNSpinkitPackage;
+import com.netease.im.RNNeteaseImPackage;
+import com.imagepicker.ImagePickerPackage;
 import com.horcrux.svg.RNSvgPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -24,6 +27,9 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNSpinkitPackage(),
+            new RNNeteaseImPackage(),
+            new ImagePickerPackage(),
             new RNSvgPackage()
       );
     }

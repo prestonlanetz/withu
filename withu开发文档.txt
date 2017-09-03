@@ -5,13 +5,20 @@ Book页面
 	IV、modal显示完毕后，会根据bookId读取本地题库数据bookData，保存在内存中
 	V、点击BookClassChooseBar后，将内存中相应的数据传递给下个NAV 进入做题界面
 
+APP login登录界面
+	I、注册  输入手机号后我的服务器从短信服务商获取验证码保存在session中，输入验证码服务器		比对正确后，发送成功200状态码，跳转到填写信息界面
+	II、填写资料时，点击提交，将图片、手机号、昵称上传到服务器，服务器将图片上传到七牛云		返回图片URL，再将图片URL、手机号，昵称上传到网易云信服务器，上传成功后，网易云信服		务器返回默认token，将其保存在数据库中，这是目前最好的解决方案，
+	III、登陆方式为短信验证码登陆方式和密码登录方式，其中密码登陆方式为设置了密码的用户，		其网易服务器的token被重新设置为自定义密码，可以直接登录。短信登陆方式为，输入短信验		证成功后，本地服务器将已经保存的token发送至APP，APP执行登陆.
+	IV、app加密方式为password: md5(md5(this.state.password1)+'preston’),传输给本地服务		器，本地服务器加密方式为sha1( 服务器发送过来的加密后的密码)
 
 1、服务器与客户端通信状态码约定
 200 密码比对正确
 400 密码错误
 401 用户不存在
+404 验证码错误
 501 服务器或数据库发生错误
-
+500 服务器错误
+504 验证码获取失败
 2、用到的组件
 	react-native-swiper			//滑动
 	react-native-drawer         		//侧栏
@@ -21,6 +28,11 @@ Book页面
 	react-native-svg@4.5.0             //渐变，图形绘制
 	react-native-progress                 //进度条
 	native-base                               //集成的UI组件库
+	react-native-image-picker        //选择照片
+	react-native-netease-im     //网易云信IM的插件，注意安卓与IOS配置不同
+	react-native-smscode-count-down  //短信验证码倒计时
+	react-native-loader   //加载中动画
+	react-native-spinkit    //更多加载动画   ,推荐
 
 3、本地数据格式
 	3.1、题库信息简介：(简介、各类型题目数量)
@@ -104,4 +116,5 @@ Book页面
                                 sinChoice:[]      //单
                             }
                     }
-4、
+4、全局变量
+	global.imAccount = ID   //网易账号，在登录时创建

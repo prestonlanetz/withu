@@ -13,13 +13,16 @@
     "ejs": "~2.5.5",
     "express": "~4.14.1",
     "express-session": "^1.15.2",
+    "fetch": "^1.1.0",
     "jsonwebtoken": "^7.3.0",
     "md5": "^2.2.1",
     "morgan": "~1.7.0",
     "nd-datetime": "^3.0.5",
     "qiniu": "^6.1.13",
+    "randomstring": "^1.1.5",
     "react-router": "^4.1.1",
     "serve-favicon": "~2.3.2",
+    "sha1": "^1.1.1",
     "sharp": "^0.18.1",
     "uuid": "^3.1.0"
   }

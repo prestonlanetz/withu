@@ -92,10 +92,6 @@ export default class BookShop extends Component {
             )
         })
     }
-    _gotoDetail(){
-        
-        
-    }
     _renderImg() {
         var imageViews = [];
         for (var i = 0; i < recommend.length; i++) {

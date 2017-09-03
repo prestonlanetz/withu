@@ -1,0 +1,8 @@
+platform :ios, '8.0'
+target “tiku3” do
+pod 'NIMSDK'
+pod 'SSZipArchive', '~> 1.2'
+pod 'Reachability', '~> 3.1.1'
+pod 'CocoaLumberjack', '~> 2.0.0-rc2'
+pod 'FMDB', '~>2.5' 
+end

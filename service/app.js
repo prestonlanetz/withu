@@ -3,7 +3,7 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
-// var bodyParser = require('body-parser');
+var bodyParser = require('body-parser');
 var router = require('./routes/router');
 var appRouter = require('./routes/appRouter')
 const session = require('express-session');
@@ -22,8 +22,10 @@ app.set('view engine', 'ejs');
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({ extended: false }));
+
+//post参数解析，数据保存在req.body中
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false })); //extended为false表示使用querystring来解析数据，这是URL-encoded解析器
 app.use(cookieParser());
 //将静态资源文件夹设置为webpack输出文件夹
 app.use(express.static(path.join(__dirname, '../dist')));
@@ -37,18 +39,24 @@ app.use(session({
     //   url:'mongodb://127.0.0.1:27017/withu'
     // })
 }))
-
+/*网页接口开始*/
 app.all('/', index);
 app.use('/login',router.login);
-
 app.use('/safe', users);
-
 app.use('/postImage',router.postImage);
 app.post('/uploadBookInform',router.uploadBookInform);
+/*网页接口结束*/
 
 /*app端接口开始*/
+app.post('/app_updatePassword',appRouter.updatePassword);  //检查用户是否已存在
 app.post('/app_getShopRecommend',appRouter.getShopRecommend);  //获取商店首页数据
 app.post('/app_getBook/:id',appRouter.getBook);  //获取题库
+app.post('/app_regist',appRouter.regist);  //获取题库
+app.post('/app_loginBySMS',appRouter.loginBySMS);  //获取题库
+app.post('/app_getSMScode',appRouter.getSMScode);  //获取短信验证码
+app.post('/app_checkSMScode',appRouter.checkSMScode);  //检查短信验证码正确性
+app.post('/app_isUserExist',appRouter.isUserExist);  //检查用户是否已存在
+
 /*app端接口结束*/
 
 

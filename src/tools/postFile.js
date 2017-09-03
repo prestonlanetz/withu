@@ -28,7 +28,6 @@ function postFile(url,userFile,callback){
   xhr.onerror = (e)=>{
     alert('请求错误',e)
   }
-  console.log('你要发送的文件为',userFile)
   xhr.send(userFile);
 };
 module.exports = postFile;
