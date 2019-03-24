@@ -26,4 +26,4 @@ var GoalModel = db.model('goal',GoalSchema);
 //模型输出
 module.exports = GoalModel;
 
-// mongod --dbpath /data/db --replSet rs0 --bind_ip 127.0.0.1:
+// mongod --dbpath /data/db --replSet rs0 --bind_ip 127.0.0.1:27017
