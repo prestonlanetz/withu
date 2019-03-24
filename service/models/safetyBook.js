@@ -80,7 +80,7 @@ var SafetyBookSchema = new mongoose.Schema({
 
 
 var SafetyBookSchema = new mongoose.Schema({
-  id : {type : String},        //安规题库ID,上传题库时的服务器保存的token命名
+  id : {type : String,unique:true},        //安规题库ID,上传题库时的服务器保存的token命名
   sinChoice : [],    //单选
   mulChoice : [],   //多选
   tfQs : [],    //判断
@@ -92,3 +92,10 @@ var SafetyBookModel = db.model('safetybook',SafetyBookSchema);
 
 //模型输出
 module.exports = SafetyBookModel;
+
+// /Users/Preston/workspace/node/mongodb
+// mongod --port 27018 --dbpath  /data/db --replSet rs0 --bind_ip 127.0.0.1
+// mongo-connector -m 127.0.0.1:27017 -t 127.0.0.1:9200 -d elastic2_doc_manager -n
+//
+// rs.slaveOk();   //允许读取副本集数据
+// db.isMaster()

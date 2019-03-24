@@ -11,6 +11,7 @@
     "cookie-parser": "^1.4.3",
     "debug": "~2.6.0",
     "ejs": "~2.5.5",
+    "elasticsearch": "^15.1.1",
     "express": "~4.14.1",
     "express-session": "^1.15.2",
     "fetch": "^1.1.0",
@@ -21,9 +22,12 @@
     "qiniu": "^6.1.13",
     "randomstring": "^1.1.5",
     "react-router": "^4.1.1",
+    "redis": "^2.8.0",
     "serve-favicon": "~2.3.2",
     "sha1": "^1.1.1",
     "sharp": "^0.18.1",
+    "socket.io": "^2.0.4",
+    "time-interval": "0.0.2",
     "uuid": "^3.1.0"
   }
 }

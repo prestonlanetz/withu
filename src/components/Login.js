@@ -13,8 +13,6 @@ const passwordIcon = require('../images/password.png');
 
 
 
-
-
 class Login extends React.Component {
   constructor(props){
     super(props);
@@ -59,7 +57,9 @@ class Login extends React.Component {
       //e为服务器返回数据
       let response = JSON.parse(e);
       // 如果验证成功，跳转，并保存决定是否保存或删除cookie
-      if(response.code == 200){
+        console.log('返回为',response)
+    
+        if(response.code == 200){
         //如果选中记住密码，将账号密码保存Cookie
         if(this.state.remenberLogin){
           cookie.save('userID',this.state.userID,{maxAge:3600*12*7})

@@ -14,10 +14,18 @@ const sharp = require('sharp');
  const datetime = require('nd-datetime'); //时间格式化工具
 
  const qiNiu = require('./routeHelper/qiniuUpload');
+ 
 //引入相应schma
  const bookStoreModal = require('../models/bookStore')
  const safetyBookModal = require('../models/safetyBook')
+ const AdminModel = require('../models/admin')
+ const users = require('../models/user');
 
+ const BookStoreModel = require('../models/bookStore')
+ const BookStorePageDataModel = require('../models/bookStorePageData')
+ const es = require('./routeHelper/es')
+
+ 
 //从上传数据中获取到JSON字段
 const reg = /{.*}/gim;
 module.exports = {
@@ -25,7 +33,7 @@ module.exports = {
     login1 : (req,res,next) => {
         //获取浏览器客户端上传数据,只接受字符串类型数据，所以客户端需要将JSON 转化为 string后再上传
                 //解除谷歌浏览器不支持本地localhost上传问题
-                res.setHeader("Access-Control-Allow-Origin", "127.0.0.1")
+                // res.setHeader("Access-Control-Allow-Origin", "127.0.0.1")
                 // 接受post上传数据
                 var postd = '';
                 req.on('data',(chunk)=>{
@@ -87,17 +95,18 @@ module.exports = {
     login : (req,res,next)=>{
                 //获取浏览器客户端上传数据,只接受字符串类型数据，所以客户端需要将JSON 转化为 string后再上传
                 //解除谷歌浏览器不支持本地localhost上传问题
-                res.setHeader("Access-Control-Allow-Origin", "127.0.0.1")
-    
         //使用formidable插件进行表单获取
                 let form = new formidable.IncomingForm();
                 form.parse(req,(err,fields,files)=> {
-                    res.writeHead(200, {'content-type': 'text/plain'});
                     if (err) {
                         res.end('{"code":"501"}');
                         return;
                     }
-                    let clientUpdate = JSON.parse(fields.clientUpdate)
+                    // res.writeHead(200, {'content-type': 'text/plain'});
+                    res.end('{"code":"200"}');
+                    return
+                    
+                    let clientUpdate = JSON.parse(fields.clientUpdate);
                     user.find({"appID":clientUpdate.userID},(err,result)=>{
                         if(err){
                             res.end('{"code":"501"}'); //501表示服务器查询错误
@@ -145,9 +154,51 @@ module.exports = {
                     })
                 })
             },
+    adminLogin : (req,res,next)=>{
+        //获取浏览器客户端上传数据,只接受字符串类型数据，所以客户端需要将JSON 转化为 string后再上传
+        //使用formidable插件进行表单获取
+        let form = new formidable.IncomingForm();
+        form.parse(req,(err,fields,files)=> {
+            if (err) {
+                res.end('{"code":"501"}');
+                return;
+            }
+            let clientUpdate = JSON.parse(fields.clientUpdate);
+            AdminModel.find({id:clientUpdate.userID},(err,result)=>{
+                if(err){
+                    res.end('{"code":"501"}'); //501表示服务器查询错误
+                    return;
+                }
+                if(result.length >= 1){
+                    if(result[0].secret == md5(clientUpdate.userPassword)){
+                        let dateNow = new Date();
+                        let Token = md5(clientUpdate.userID + dateNow);
+                        let senddata = {
+                            code:"200",
+                            token:Token,
+                            name:result[0].name,
+                            avatar:result[0].avatar,
+                            pms:result[0].pms,
+                        }
+                        senddata = JSON.stringify(senddata);
+                        req.session.logined = true;
+                        req.session.name = result[0].name;
+                        req.session.id = clientUpdate.id;
+                        req.session.token = Token;
+                        
+                        res.end(senddata);
+                    }else{ //密码错误
+                        res.end('{"code":"400"}'); //400表示密码错误
+                    }
+                }else{ //不存在该用户
+                    res.end('{"code":"401"}'); //401表示用户不存在
+                }
+            })
+        })
+    },
     //用户上传安规封面处理函数
     postImage : (req,res,next)=>{
-                      res.setHeader("Access-Control-Allow-Origin", "*")  //支持跨域cookie
+                      // res.setHeader("Access-Control-Allow-Origin", "*")  //支持跨域cookie
                       if(!req.session.logined){
                         res.end('401')  //登陆信息已经过期，请重新登录
                         return;
@@ -157,15 +208,13 @@ module.exports = {
                     //  定义上传路径
                     form.uploadDir = path.join(__dirname,'../resource')
                     form.parse(req,(err,fields,files)=>{
-                      res.writeHead(200, {'content-type': 'text/plain'});
+                      // res.writeHead(200, {'content-type': 'text/plain'});
 
                       if(err){
                             console.log('formidabel错误'+err);
                             return;
                       }
-
-                      
-
+                        
                       //
 
                       sharp(files.clientUpdate.path)
@@ -220,7 +269,6 @@ module.exports = {
                       })
                 },
   uploadBookInform:(req,res,next)=>{
-                      res.setHeader("Access-Control-Allow-Origin", "*")
                       if(!req.session.logined){
                         res.end('401')  //登陆信息已经过期，请重新登录
                         return;
@@ -283,5 +331,391 @@ module.exports = {
                           })
                         })
                       })
+                    },
+    getUncheckedBook:(req,res)=> {
+        if (!req.session.token) {
+            res.end(JSON.stringify({code: 401}))
+        }
+        if (req.session.token != req.query.token) {
+            res.end(JSON.stringify({code: 402}))
+        }
+        bookStoreModal.find({checked:0}, (err, result) => {
+            if (err) {
+                res.end(JSON.stringify({code: 501}))
+            }
+            res.end(JSON.stringify({code: 200, results: result}))
+        })
+    },
+    getRealBook:(req,res)=> {
+        if (!req.session.token) {
+            res.end(JSON.stringify({code: 401}))
+        }
+        if (req.session.token != req.query.token) {
+            res.end(JSON.stringify({code: 402}))
+        }
+        let form = new formidable.IncomingForm();
+        form.parse(req,(err,fields,files)=> {
+            if (err) {
+                res.end('{"code":"501"}');
+                return;
+            }
+            let clientUpdate = JSON.parse(fields.clientUpdate);
+            safetyBookModal
+                .find({id:clientUpdate.bookid},(err,result)=>{
+                    if(err){
+                        let myerr = JSON.stringify({"code":501})
+                        res.end(myerr)
+                        return;
                     }
+                    let data = {code:200,result: result[0]}
+                    data = JSON.stringify(data)
+                    res.end(data);
+                })
+        })
+    },
+    checkBook: (req,res)=>{
+        let form = new formidable.IncomingForm();
+        res.end(JSON.stringify({code: 200}))
+        return
+        form.parse(req,(err,fields,files)=> {
+            if (err) {
+                res.end('{"code":"501"}');
+                return;
+            }
+            let clientUpdate = JSON.parse(fields.clientUpdate);
+    
+            /* 短信验证码
+             let option =
+             {
+             mobile : req.body.phoneNum,
+             codeLen : 4,//4位数验证码
+             }
+             netease.getSMScode(option,(err,data)=>{
+             console.log(data)
+             if(err){
+             res.send(JSON.stringify({code:504}));     //验证码获取失败
+             return;
+             }
+             if(data.code == 200){
+             req.session.cookie.expires = new Date(Date.now() +600000);
+             req.session.cookie.maxAge = 600000;
+             req.session.SMScode = data.obj;
+             res.send(JSON.stringify({code:200}));     //验证码获取成功
+             }else{
+             res.send(JSON.stringify({code:504}));     //验证码获取失败
+             return;
+             }
+             })
+             */
+            
+            if(clientUpdate&&clientUpdate.agree){
+                bookStoreModal.update({id:clientUpdate.bookid},{$set:{checked:1}}).exec((err2,result)=>{
+                    if(err2){
+                        res.end('{"code":"501"}');
+                        return;
+                    }
+                    res.end(JSON.stringify({code: 200}))
+                })
+            }else if(clientUpdate&&!clientUpdate.agree){
+                bookStoreModal.remove({id:clientUpdate.bookid},(err3,done)=>{
+                    if(err3){
+                        res.end(JSON.stringify({code: 501}))
+                        return
+                    }
+                    safetyBookModal.remove({id:clientUpdate.bookid},(err4,done2)=>{
+                        if(err4){
+                            res.end(JSON.stringify({code: 501}))
+                            return
+                        }
+                        res.end(JSON.stringify({code: 200}))
+                    })
+                })
+            }
+        })
+    },
+    
+    getBookStoreIndexpage:(req,res)=>{
+        let form = new formidable.IncomingForm();
+        form.parse(req,(err,fields,files)=> {
+            if (err) {
+                res.end('{"code":"501"}');
+                return;
+            }
+            let clientUpdate = JSON.parse(fields.clientUpdate);
+            safetyBookModal
+                .find({id:clientUpdate.bookid},(err,result)=>{
+                    if(err){
+                        let myerr = JSON.stringify({"code":501})
+                        res.end(myerr)
+                        return;
+                    }
+                    let data = {code:200,result: result[0]}
+                    data = JSON.stringify(data)
+                    res.end(data);
+                })
+        })
+    },
+    getQiniuTokenbyBucket:(req,res)=>{
+     //用上传上来的图片名生成七牛token
+        let form = new formidable.IncomingForm();
+        form.parse(req,(err,fields,files)=> {
+            let clientUpdate = JSON.parse(fields.clientUpdate);
+            if (err) {
+                res.end('{"code":"501"}');
+                return;
+            }
+            let imgName = clientUpdate.imgName
+            let bucket = clientUpdate.bucket
+            let fops = clientUpdate.fops
+            let token = qiNiu.uptoken(bucket, imgName, fops)
+            res.end(JSON.stringify({code:200,token}));
+        })
+     //将数据回传客户端
+ },
+    uploadStoreData:(req,res)=>{
+        let form = new formidable.IncomingForm();
+        form.parse(req,(err,fields,files)=>{
+            if(err){
+                res.end('{"code":"501"}');
+                return;
+            }
+            let clientUpdate = JSON.parse(fields.clientUpdate);
+            BookStorePageDataModel.create(clientUpdate,(err)=>{
+                if(err){
+                    console.log('数据保存失败',err)
+                    res.end('{"code":"500"}');
+                    return
+                }
+                res.end(JSON.stringify({code:200}));
+            })
+        })
+    },
+    searchBookByName:(req,res)=>{
+        let form = new formidable.IncomingForm();
+        form.parse(req,(err,fields,files)=>{
+            if(err){
+                res.end('{"code":"501"}');
+                return;
+            }
+            let clientUpdate = JSON.parse(fields.clientUpdate);
+            
+            es.search({
+                index:'withu',
+                body: {
+                    query: {
+                        multi_match:{
+                            "query":  clientUpdate.bookName,
+                            "fields": [ "name", "detail" ]
+                        }
+                    },
+                    min_score:1
+                }
+            },(err,myhits)=>{
+                if(err){
+                    res.end('{"code":"501"}');
+                    return
+                }
+                res.end(JSON.stringify({code:200,hits:myhits.hits.hits}));
+            })
+        })
+    },
+    bookStorePageDataUpload:(req,res)=>{
+        let form = new formidable.IncomingForm();
+        form.parse(req,(err,fields,files)=>{
+            if(err){
+                res.end('{"code":"501"}');
+                return;
+            }
+            let clientUpdate = JSON.parse(fields.clientUpdate);
+            BookStorePageDataModel.update({name:'storeIndexPage'},clientUpdate).exec((err1,result)=>{
+                if(err1){
+                    console.log('数据保存失败',err)
+                    res.end('{"code":"500"}');
+                    return
+                }
+                if(result.n==0){
+                    BookStorePageDataModel.create(clientUpdate,(err2)=>{
+                        res.end(JSON.stringify({code:200}));
+                    })
+                }else {
+                    res.end(JSON.stringify({code:200}));
+                }
+            })
+        })
+    },
+    getStorePageData:(req,res)=>{
+        BookStorePageDataModel.find({name:'storeIndexPage'}).exec((err,result)=>{
+            if(err){
+                console.log('数据保存失败',err)
+                res.end('{"code":"500"}');
+                return
+            }
+            let data = result[0]||[]
+            res.end(JSON.stringify({code:200,data:data}));
+        })
+    },
+    getBookByTime:(req,res)=>{
+        if (!req.session.token) {
+            res.end(JSON.stringify({code: 401}))
+        }
+        if (req.session.token != req.query.token) {
+            res.end(JSON.stringify({code: 402}))
+        }
+        bookStoreModal.find({}).sort({'updateTime':-1}).exec( (err, result) => {
+            if (err) {
+                res.end(JSON.stringify({code: 501}))
+            }
+            res.end(JSON.stringify({code: 200, results: result}))
+        })
+    },
+    deleteBook:(req,res)=>{
+        let form = new formidable.IncomingForm();
+        form.parse(req,(err,fields,files)=> {
+            if (err) {
+                res.end('{"code":"501"}');
+                return;
+            }
+            let clientUpdate = JSON.parse(fields.clientUpdate);
+            bookStoreModal.remove({id:clientUpdate.bookid},(err3,done)=>{
+                if(err3){
+                    res.end(JSON.stringify({code: 501}))
+                    return
+                }
+                safetyBookModal.remove({id:clientUpdate.bookid},(err4,done2)=>{
+                    if(err4){
+                        res.end(JSON.stringify({code: 501}))
+                        return
+                    }
+                    res.end(JSON.stringify({code: 200}))
+                })
+            })
+        })
+    },
+    getAdmin:(req,res)=>{
+        let form = new formidable.IncomingForm();
+        form.parse(req,(err,fields,files)=> {
+            if (err) {
+                res.end('{"code":"501"}');
+                return;
+            }
+            AdminModel.find({}).sort({'pms':-1}).exec((err,result)=> {
+                if (err) {
+                    res.end('{"code":"501"}');
+                    return;
+                }
+                res.end(JSON.stringify({code: 200,admins:result}))
+            })
+        })
+    },
+    findUser:(req,res)=>{
+        let form = new formidable.IncomingForm();
+        form.parse(req,(err,fields,files)=> {
+            if (err) {
+                res.end('{"code":"501"}');
+                return;
+            }
+            let clientUpdate = JSON.parse(fields.clientUpdate);
+            users.find({appID:clientUpdate.uid}).exec((err,result)=> {
+                if (err) {
+                    res.end('{"code":"501"}');
+                    return;
+                }
+                if(result.length==0){
+                    res.end('{"code":"501"}');
+                    return;
+                }
+                res.end(JSON.stringify({code: 200,user:result[0]}))
+            })
+        })
+    },
+    addAdmin:(req,res)=>{
+        let form = new formidable.IncomingForm();
+        form.parse(req,(err,fields,files)=> {
+            if (err) {
+                res.end('{"code":"501"}');
+                return;
+            }
+            let clientUpdate = JSON.parse(fields.clientUpdate);
+            AdminModel.create(clientUpdate,(err,result)=>{
+                if(err){
+                    res.end('{"code":"501"}');
+                    return;
+                }
+                res.end(JSON.stringify({code: 200}))
+            })
+        })
+    },
+    changeAdminRight:(req,res)=>{
+        let form = new formidable.IncomingForm();
+        form.parse(req,(err,fields,files)=> {
+            if (err) {
+                res.end('{"code":"501"}');
+                return;
+            }
+            let clientUpdate = JSON.parse(fields.clientUpdate);
+            let spin = 0
+            let pms = 0
+            let toDelete = false
+            AdminModel.find({id:clientUpdate.uid},(err0,admins)=>{
+                if(err0) return
+                pms = Number(admins[0].pms)
+                switch (clientUpdate.spin){
+                    case 'up':
+                        if(pms==4){
+                            return
+                        }
+                        spin=1;
+                        break;
+                    case 'down':
+                        if(pms==1){
+                            return
+                        }
+                        spin = -1
+                        break;
+                    case 'delete':
+                        toDelete = true
+                        break;
+                }
+    
+                if(toDelete){
+                    AdminModel.remove({id:clientUpdate.uid},(err1,res1)=>{
+                        if(err1){
+                            res.end('{"code":"501"}');
+                            return;
+                        }
+                        res.end(JSON.stringify({code: 200}))
+                    })
+                }else {
+                    AdminModel.update({id:clientUpdate.uid},{$inc:{pms:spin}}).exec((err2,res2)=>{
+                        if(err2){
+                            res.end('{"code":"501"}');
+                            return;
+                        }
+                        res.end(JSON.stringify({code: 200}))
+                    })
+                }
+            })
+        })
+    },
+    getUsers: (req,res)=>{
+        users.find({}).limit(20)
+    },
+    getBookByID:(req,res)=>{
+        let form = new formidable.IncomingForm();
+        form.parse(req,(err,fields,files)=> {
+            if (err) {
+                res.end('{"code":"501"}');
+                return;
+            }
+            let clientUpdate = JSON.parse(fields.clientUpdate);
+            let bookID = clientUpdate.bookID
+            bookStoreModal.find({id:bookID},(err1,result)=>{
+                if(err1){
+                    res.end('{"code":"501"}');
+                    return;
+                }
+                res.end(JSON.stringify({code: 200,bookInfo:result[0]}))
+            })
+        })
+    }
 }

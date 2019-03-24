@@ -1,0 +1,1092 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9f4bed73-1725-44f9-8e97-81f3ca371b3b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/models/goal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/models/goalSign.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/tool/toolFunction.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/.babelrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/.buckconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/.flowconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/.watchmanconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/__tests__/index.android.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/__tests__/index.ios.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/BUCK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/proguard-rules.pro" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Andale Mono.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Arial Black.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Arial.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Comic Sans MS.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Courier New.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Entypo.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/EvilIcons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/FontAwesome.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Foundation.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Georgia.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Ionicons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/MaterialIcons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Microsoft Sans Serif.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Octicons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Roboto.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Roboto_medium.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Rubik-Black.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Rubik-BlackItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Rubik-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Rubik-BoldItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Rubik-Italic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Rubik-Light.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Rubik-LightItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Rubik-Medium.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Rubik-MediumItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Rubik-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/SF-UI-Text-Regular.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/SanFrancisco.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/SanFranciscoBold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/SanFranciscoThin.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/SimpleLineIcons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Skia.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Times New Roman.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/Zocial.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/assets/fonts/rubicon-icon-font.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/java/com/tiku3/MainActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/java/com/tiku3/MainApplication.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/res/values/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/app/src/main/res/values/styles.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/gradle.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/gradle/wrapper/gradle-wrapper.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/gradlew" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/gradlew.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/keystores/BUCK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/keystores/debug.keystore.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/android/settings.gradle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/app.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/funcs/arrayDiffer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/funcs/uploadImage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/index.android.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/index.ios.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Podfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Podfile.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/CocoaLumberjack.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/CocoaLumberjack.swift" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/DDASLLogCapture.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/DDASLLogCapture.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/DDASLLogger.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/DDASLLogger.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/DDAbstractDatabaseLogger.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/DDAbstractDatabaseLogger.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/DDAssertMacros.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/DDFileLogger.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/DDFileLogger.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/DDLegacyMacros.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/DDLog+LOGV.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/DDLog.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/DDLog.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/DDLogMacros.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/DDTTYLogger.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/DDTTYLogger.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/Extensions/DDContextFilterLogFormatter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/Extensions/DDContextFilterLogFormatter.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/Extensions/DDDispatchQueueLogFormatter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/Extensions/DDDispatchQueueLogFormatter.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/Extensions/DDMultiFormatter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Classes/Extensions/DDMultiFormatter.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/Framework/Lumberjack/CocoaLumberjack.modulemap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/CocoaLumberjack/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/FMDB/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/FMDB/README.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/FMDB/src/fmdb/FMDB.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/FMDB/src/fmdb/FMDatabase.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/FMDB/src/fmdb/FMDatabase.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/FMDB/src/fmdb/FMDatabaseAdditions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/FMDB/src/fmdb/FMDatabaseAdditions.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/FMDB/src/fmdb/FMDatabasePool.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/FMDB/src/fmdb/FMDatabasePool.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/FMDB/src/fmdb/FMDatabaseQueue.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/FMDB/src/fmdb/FMDatabaseQueue.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/FMDB/src/fmdb/FMResultSet.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/FMDB/src/fmdb/FMResultSet.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/CocoaLumberjack/CocoaLumberjack.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/CocoaLumberjack/DDASLLogCapture.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/CocoaLumberjack/DDASLLogger.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/CocoaLumberjack/DDAbstractDatabaseLogger.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/CocoaLumberjack/DDAssertMacros.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/CocoaLumberjack/DDContextFilterLogFormatter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/CocoaLumberjack/DDDispatchQueueLogFormatter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/CocoaLumberjack/DDFileLogger.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/CocoaLumberjack/DDLegacyMacros.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/CocoaLumberjack/DDLog+LOGV.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/CocoaLumberjack/DDLog.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/CocoaLumberjack/DDLogMacros.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/CocoaLumberjack/DDMultiFormatter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/CocoaLumberjack/DDTTYLogger.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/FMDB/FMDB.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/FMDB/FMDatabase.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/FMDB/FMDatabaseAdditions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/FMDB/FMDatabasePool.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/FMDB/FMDatabaseQueue.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/FMDB/FMResultSet.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/Reachability/Reachability.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/SSZipArchive/SSZipArchive.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/SSZipArchive/SSZipCommon.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/SSZipArchive/ZipArchive.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/SSZipArchive/aes.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/SSZipArchive/aes_via_ace.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/SSZipArchive/aesopt.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/SSZipArchive/aestab.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/SSZipArchive/brg_endian.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/SSZipArchive/brg_types.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/SSZipArchive/crypt.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/SSZipArchive/entropy.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/SSZipArchive/fileenc.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/SSZipArchive/hmac.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/SSZipArchive/ioapi.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/SSZipArchive/mztools.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/SSZipArchive/prng.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/SSZipArchive/pwd2key.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/SSZipArchive/sha1.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/SSZipArchive/unzip.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Private/SSZipArchive/zip.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/CocoaLumberjack/CocoaLumberjack.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/CocoaLumberjack/DDASLLogCapture.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/CocoaLumberjack/DDASLLogger.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/CocoaLumberjack/DDAbstractDatabaseLogger.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/CocoaLumberjack/DDAssertMacros.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/CocoaLumberjack/DDContextFilterLogFormatter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/CocoaLumberjack/DDDispatchQueueLogFormatter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/CocoaLumberjack/DDFileLogger.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/CocoaLumberjack/DDLegacyMacros.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/CocoaLumberjack/DDLog+LOGV.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/CocoaLumberjack/DDLog.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/CocoaLumberjack/DDLogMacros.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/CocoaLumberjack/DDMultiFormatter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/CocoaLumberjack/DDTTYLogger.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/FMDB/FMDB.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/FMDB/FMDatabase.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/FMDB/FMDatabaseAdditions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/FMDB/FMDatabasePool.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/FMDB/FMDatabaseQueue.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/FMDB/FMResultSet.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMAVChat/NIMAVChat.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMAVChat/NIMAVChatDefs.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMAVChat/NIMAVChatHeader.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMAVChat/NIMAVChatNetDetectManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMAVChat/NIMAVChatNetDetectResult.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMAVChat/NIMNetCallAudioFileMixTask.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMAVChat/NIMNetCallManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMAVChat/NIMNetCallMeeting.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMAVChat/NIMNetCallOption.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMAVChat/NIMNetCallRecordingInfo.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMAVChat/NIMNetCallUserInfo.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMAVChat/NIMNetCallVideoCaptureParam.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMAVChat/NIMRTSConference.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMAVChat/NIMRTSConferenceData.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMAVChat/NIMRTSConferenceManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMAVChat/NIMRTSManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMAVChat/NIMRTSOption.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMAVChat/NIMRTSRecordingInfo.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMAntiSpamOption.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMApnsManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMAudioObject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMChatManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMChatroom.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMChatroomEnterRequest.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMChatroomManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMChatroomMember.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMChatroomMemberRequest.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMChatroomNotificationContent.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMChatroomQueueRequest.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMChatroomUpdateRequest.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMConversationManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMCreateTeamOption.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMCustomObject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMCustomSystemNotificationSetting.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMDocTranscodingInfo.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMDocTranscodingManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMEventSubscribeManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMFileObject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMGlobalDefs.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMImageObject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMLocationObject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMLoginClient.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMLoginManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMMediaManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMMessage.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMMessageApnsMemberOption.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMMessageChatroomExtension.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMMessageObjectProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMMessageReceipt.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMMessageSearchOption.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMMessageSetting.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMNetCallNotificationContent.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMNotificationContent.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMNotificationObject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMPlatform.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMPushNotificationSetting.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMRecentSession.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMResourceManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMRevokeMessageNotification.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMRobot.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMRobotManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMRobotObject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMSDK.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMSDKConfig.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMSDKHeader.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMSDKOption.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMSession.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMSubscribeEvent.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMSubscribeOnlineInfo.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMSubscribeRequest.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMSubscribeResult.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMSystemNotification.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMSystemNotificationManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMTeam.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMTeamDefs.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMTeamManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMTeamMember.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMTeamNotificationContent.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMTipObject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMUnsupportedNotificationContent.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMUser.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMUserManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/NIMSDK/NIMSDK/NIMVideoObject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/Reachability/Reachability.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/SSZipArchive/SSZipArchive.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/SSZipArchive/SSZipCommon.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Headers/Public/SSZipArchive/ZipArchive.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Manifest.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/Libs/libGPUImage.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/Libs/libNMCVideoModule.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/Libs/libnio.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/Libs/libnts.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/Libs/libnvs.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/Libs/libopenh264.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/Libs/libopus.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/Headers/NIMAVChat.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/Headers/NIMAVChatDefs.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/Headers/NIMAVChatHeader.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/Headers/NIMAVChatNetDetectManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/Headers/NIMAVChatNetDetectResult.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/Headers/NIMNetCallAudioFileMixTask.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/Headers/NIMNetCallManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/Headers/NIMNetCallMeeting.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/Headers/NIMNetCallOption.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/Headers/NIMNetCallRecordingInfo.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/Headers/NIMNetCallUserInfo.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/Headers/NIMNetCallVideoCaptureParam.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/Headers/NIMRTSConference.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/Headers/NIMRTSConferenceData.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/Headers/NIMRTSConferenceManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/Headers/NIMRTSManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/Headers/NIMRTSOption.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/Headers/NIMRTSRecordingInfo.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/Modules/module.modulemap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/NIMAVChat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/_CodeSignature/CodeDirectory" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/_CodeSignature/CodeRequirements" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/_CodeSignature/CodeRequirements-1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/_CodeSignature/CodeResources" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/NIMAVChat.framework/_CodeSignature/CodeSignature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/Resources/NMCVideoFilter.bundle/lookup.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/Resources/NMCVideoFilter.bundle/lookup_amatorka.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/Resources/NMCVideoFilter.bundle/meiyan1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMAVChat/Resources/NMCVideoFilter.bundle/meiyan2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/Libs/libaacplus.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/Libs/libcrypto.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/Libs/libevent.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/Libs/libssl.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMAntiSpamOption.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMApnsManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMAudioObject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMChatManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMChatroom.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMChatroomEnterRequest.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMChatroomManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMChatroomMember.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMChatroomMemberRequest.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMChatroomNotificationContent.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMChatroomQueueRequest.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMChatroomUpdateRequest.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMConversationManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMCreateTeamOption.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMCustomObject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMCustomSystemNotificationSetting.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMDocTranscodingInfo.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMDocTranscodingManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMEventSubscribeManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMFileObject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMGlobalDefs.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMImageObject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMLocationObject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMLoginClient.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMLoginManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMMediaManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMMessage.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMMessageApnsMemberOption.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMMessageChatroomExtension.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMMessageObjectProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMMessageReceipt.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMMessageSearchOption.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMMessageSetting.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMNetCallNotificationContent.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMNotificationContent.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMNotificationObject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMPlatform.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMPushNotificationSetting.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMRecentSession.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMResourceManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMRevokeMessageNotification.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMRobot.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMRobotManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMRobotObject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMSDK.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMSDKConfig.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMSDKHeader.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMSDKOption.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMSession.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMSubscribeEvent.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMSubscribeOnlineInfo.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMSubscribeRequest.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMSubscribeResult.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMSystemNotification.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMSystemNotificationManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMTeam.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMTeamDefs.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMTeamManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMTeamMember.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMTeamNotificationContent.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMTipObject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMUnsupportedNotificationContent.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMUser.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMUserManagerProtocol.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Headers/NIMVideoObject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/Modules/module.modulemap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/NIMSDK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/_CodeSignature/CodeDirectory" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/_CodeSignature/CodeRequirements" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/_CodeSignature/CodeRequirements-1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/_CodeSignature/CodeResources" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/NIMSDK/NIMSDK.framework/_CodeSignature/CodeSignature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/NIMSDK/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Pods.xcodeproj/project.pbxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Reachability/LICENCE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Reachability/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Reachability/Reachability.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Reachability/Reachability.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/SSZipArchive.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/SSZipArchive.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/SSZipCommon.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/ZipArchive.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/aes/aes.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/aes/aes_via_ace.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/aes/aescrypt.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/aes/aeskey.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/aes/aesopt.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/aes/aestab.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/aes/aestab.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/aes/brg_endian.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/aes/brg_types.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/aes/entropy.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/aes/entropy.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/aes/fileenc.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/aes/fileenc.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/aes/hmac.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/aes/hmac.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/aes/prng.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/aes/prng.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/aes/pwd2key.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/aes/pwd2key.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/aes/sha1.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/aes/sha1.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/minizip/crypt.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/minizip/ioapi.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/minizip/ioapi.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/minizip/mztools.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/minizip/mztools.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/minizip/unzip.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/minizip/unzip.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/minizip/zip.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/SSZipArchive/SSZipArchive/minizip/zip.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Target Support Files/CocoaLumberjack/CocoaLumberjack-dummy.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Target Support Files/CocoaLumberjack/CocoaLumberjack-prefix.pch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Target Support Files/CocoaLumberjack/CocoaLumberjack.xcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Target Support Files/FMDB/FMDB-dummy.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Target Support Files/FMDB/FMDB-prefix.pch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Target Support Files/FMDB/FMDB.xcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Target Support Files/Pods-tiku3/Pods-tiku3-acknowledgements.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Target Support Files/Pods-tiku3/Pods-tiku3-acknowledgements.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Target Support Files/Pods-tiku3/Pods-tiku3-dummy.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Target Support Files/Pods-tiku3/Pods-tiku3-frameworks.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Target Support Files/Pods-tiku3/Pods-tiku3-resources.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Target Support Files/Pods-tiku3/Pods-tiku3.debug.xcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Target Support Files/Pods-tiku3/Pods-tiku3.release.xcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Target Support Files/Reachability/Reachability-dummy.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Target Support Files/Reachability/Reachability-prefix.pch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Target Support Files/Reachability/Reachability.xcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Target Support Files/SSZipArchive/SSZipArchive-dummy.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Target Support Files/SSZipArchive/SSZipArchive-prefix.pch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/Pods/Target Support Files/SSZipArchive/SSZipArchive.xcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3-tvOS/Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3-tvOSTests/Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3.xcodeproj/project.pbxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3.xcodeproj/xcshareddata/xcschemes/tiku3-tvOS.xcscheme" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3.xcodeproj/xcshareddata/xcschemes/tiku3.xcscheme" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3.xcworkspace/contents.xcworkspacedata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/AppDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/AppDelegate.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Base.lproj/LaunchScreen.xib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/AppIcon.appiconset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/book_QuestionSidebar.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/book_QuestionSidebar.imageset/book_QuestionSidebar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/book_guanbi.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/book_guanbi.imageset/guanbi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/book_like.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/book_like.imageset/book_like.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/book_like_fill.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/book_like_fill.imageset/book_like_fill.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/book_see.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/book_see.imageset/book_see.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/book_sendMessage.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/book_sendMessage.imageset/book_sendMessage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/book_set.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/book_set.imageset/book_set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/book_tuichu.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/book_tuichu.imageset/book_tuichu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/book_write.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/book_write.imageset/book_write.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/chacha.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/chacha.imageset/chacha.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/mudan.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/mudan.imageset/mudan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/she.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/book/she.imageset/she.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/commen/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/commen/ok.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/commen/ok.imageset/ok.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/exit.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/exit.imageset/exit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/girl.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/girl.imageset/girl.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/loginCamera.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/loginCamera.imageset/loginCamera.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/loginUser.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/loginUser.imageset/loginUser.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/me/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/me/me_book.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/me/me_book.imageset/me_book.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/me/me_collect.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/me/me_collect.imageset/me_collect.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/me/me_comment.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/me/me_comment.imageset/me_comment.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/me/me_diary.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/me/me_diary.imageset/me_diary.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/me/me_focus.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/me/me_focus.imageset/me_focus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/me/me_me.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/me/me_me.imageset/me_me.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/me/me_money.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/me/me_money.imageset/me_money.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/me/me_tie.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/me/me_tie.imageset/me_tie.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/star.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/star.imageset/star.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/starDark.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/starDark.imageset/starDark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/tabBar/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/tabBar/tabBar_book.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/tabBar/tabBar_book.imageset/tabBar_book.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/tabBar/tabBar_book_selected.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/tabBar/tabBar_book_selected.imageset/tabBar_book_selected.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/tabBar/tabBar_chat.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/tabBar/tabBar_chat.imageset/tabBar_chat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/tabBar/tabBar_chat_selected.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/tabBar/tabBar_chat_selected.imageset/tabBar_chat_selected.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/tabBar/tabBar_find.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/tabBar/tabBar_find.imageset/tabBar_find.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/tabBar/tabBar_find_selected.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/tabBar/tabBar_find_selected.imageset/tabBar_find_selected.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/tabBar/tabBar_me.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/tabBar/tabBar_me.imageset/tabBar_me.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/tabBar/tabBar_me_selected.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Images.xcassets/tabBar/tabBar_me_selected.imageset/tabBar_me_selected.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3/main.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3Tests/Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/ios/tiku3Tests/tiku3Tests.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Book/Book.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Book/BookBoxCell.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Book/BookCommen/OptionCell.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Book/BookDetail.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Book/BookShop.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Book/DoExcess.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Book/ExcessControlPanel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Book/ExcessMain.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Chat/Chat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Commen/BookCell.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Commen/BookClassChooseBar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Commen/Hr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Commen/MyBookCell.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Commen/ReceiveSMSbutton.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Commen/TouchBar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Find/Find.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Login.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Me/Me.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Me/UserBasicDataDetail.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Nav.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Tools/base64.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Tools/fetchData.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Tools/jmessageSDK.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Tools/storage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/iosComponent/Tools/xhr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tiku3/yarn.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/ChangeLog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/LICENSE.BSD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/arguments.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/child_process-examples.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/colorwheel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/countdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/detectsniff.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/echoToFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/features.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/fibo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/hello.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/injectme.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/loadspeed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/loadurlwithoutcss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/modernizr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/netlog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/netsniff.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/openurlwithproxy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/outputEncoding.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/page_events.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/pagecallback.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/phantomwebintro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/post.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/postjson.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/postserver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/printenv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/printheaderfooter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/printmargins.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/rasterize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/render_multi_url.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/responsive-screenshot.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/run-jasmine.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/run-jasmine2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/run-qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/scandir.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/serverkeepalive.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/simpleserver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/sleepsort.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/stdin-stdout-stderr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/universe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/unrandomize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/useragent.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/version.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/waitfor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/examples/walk_through_frames.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/phantomjs-prebuilt/lib/phantom/third-party.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/withu开发文档.txt的替身" afterPath="$PROJECT_DIR$/withu开发文档.txt的替身" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/service/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/app.js" afterPath="$PROJECT_DIR$/service/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/models/bookStore.js" afterPath="$PROJECT_DIR$/service/models/bookStore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/models/bookStoreComment.js" afterPath="$PROJECT_DIR$/service/models/bookStoreComment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/models/safetyBook.js" afterPath="$PROJECT_DIR$/service/models/safetyBook.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/models/safetyBookComment.js" afterPath="$PROJECT_DIR$/service/models/safetyBookComment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/models/user.js" afterPath="$PROJECT_DIR$/service/models/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/package.json" afterPath="$PROJECT_DIR$/service/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/routes/appRouter.js" afterPath="$PROJECT_DIR$/service/routes/appRouter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/routes/routeHelper/netease.js" afterPath="$PROJECT_DIR$/service/routes/routeHelper/netease.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/routes/routeHelper/qiniuUpload.js" afterPath="$PROJECT_DIR$/service/routes/routeHelper/qiniuUpload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/routes/router.js" afterPath="$PROJECT_DIR$/service/routes/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Login.js" afterPath="$PROJECT_DIR$/src/components/Login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Main.js" afterPath="$PROJECT_DIR$/src/components/Main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/steps/inform.js" afterPath="$PROJECT_DIR$/src/components/steps/inform.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tools/sendData.js" afterPath="$PROJECT_DIR$/src/tools/sendData.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/withu开发文档.txt" afterPath="$PROJECT_DIR$/withu开发文档.txt" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="inform.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/steps/inform.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="853">
+              <caret line="385" column="22" lean-forward="false" selection-start-line="385" selection-start-column="22" selection-end-line="385" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sendData.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tools/sendData.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="56" lean-forward="false" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>postData</find>
+      <find>BrowserRouter</find>
+      <find>数据为</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/components/Login.js" />
+        <option value="$PROJECT_DIR$/src/components/Main.js" />
+        <option value="$PROJECT_DIR$/src/tools/sendData.js" />
+        <option value="$PROJECT_DIR$/src/components/steps/inform.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+    <handled-path value="$PROJECT_DIR$/service/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="577" />
+    <option name="y" value="23" />
+    <option name="width" value="1158" />
+    <option name="height" value="1003" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="withu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="withu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="withu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="withu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="withu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="withu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="withu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="withu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="withu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="withu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="steps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="withu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="withu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f4bed73-1725-44f9-8e97-81f3ca371b3b" name="Default" comment="" />
+      <created>1532434317665</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1532434317665</updated>
+      <workItem from="1532434319103" duration="14091000" />
+      <workItem from="1532617539895" duration="2125000" />
+      <workItem from="1534477518899" duration="36000" />
+      <workItem from="1536398174957" duration="286000" />
+      <workItem from="1536400648931" duration="535000" />
+      <workItem from="1536450599312" duration="75000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="17148000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="577" y="23" width="1158" height="1003" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21020229" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/components/steps/inform.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tools/sendData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="56" lean-forward="true" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/steps/inform.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="114" column="18" lean-forward="false" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tools/sendData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="47" column="12" lean-forward="false" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tools/sendData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="63" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="27" lean-forward="false" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2400">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/assets/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="32" column="1759" lean-forward="true" selection-start-line="32" selection-start-column="1759" selection-end-line="32" selection-end-column="1759" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="83" lean-forward="true" selection-start-line="26" selection-start-column="83" selection-end-line="26" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-480">
+          <caret line="38" column="15" lean-forward="true" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="42" column="27" lean-forward="false" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tools/sendData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="56" lean-forward="false" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/steps/inform.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="853">
+          <caret line="385" column="22" lean-forward="false" selection-start-line="385" selection-start-column="22" selection-end-line="385" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

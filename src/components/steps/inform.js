@@ -53,7 +53,6 @@ class Inform extends React.Component {
 
 
   _upload(){
-    // console.log(this.props.questionDB)
     //表单本地验证
     if(this.state.coverURL==''){
       this.setState({
@@ -390,7 +389,7 @@ class Inform extends React.Component {
         <div className="bottomBox">
           <button className="informSubmit"
                   disabled={this.state.upLoadButtonText=="上 传" ? '':'disabled'}
-                  style={this.state.upLoadButtonText=="上 传" ? {}:{width:'90%',cursor:"default",border:'none',fontSize:'22'}}
+                  style={this.state.upLoadButtonText=="上 传" ? {}:{width:'90%',cursor:"default",border:'none',fontSize:22}}
                   ref={(uploadButton)=>{this.uploadButton = uploadButton}}
                   onClick={()=>{
                     this._upload()

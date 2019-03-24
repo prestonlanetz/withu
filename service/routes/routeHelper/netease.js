@@ -2,21 +2,19 @@
  * Created by Preston on 2017/8/14.
  */
 
-//y与网易云IM借口交互
+//y与网易云IM接口交互
     
 const sha1 = require('sha1');
 const randomstring = require('randomstring');  //生成随机数插件
 const querystring = require('querystring')
 const fetchUrl = require('fetch').fetchUrl;
 
-// const AppKey = '47676edf917f57a4acf0bdb38d06bf57';
 const AppKey = '1b14b8f5cb8fff74008b9cb80e4daf19';
-// const AppSecret = 'c854cf3795e6'
 const AppSecret = '460add4825cc'
 
 module.exports =
     {
-        registUser,getToken,getSMScode,updateToken
+        registUser,getToken,getSMScode,updateToken,updateUserInfo,pushNotify
     }
 
 //网易IM网络请求接口校验,生成对应校验字符串
@@ -42,7 +40,6 @@ function getCheck(url,jsonBody,callback) {
     //请求网易服务器
     fetchUrl(url,option,(err,meta,body)=>{
         if(err){
-            console.log('网易服务器请求错误：',err);
             callback(err,null)
             return
         }
@@ -115,6 +112,32 @@ function updateToken(jsonBody,callback){
             return
         }
         callback(null,bodyData);
-    })}
-
-    
+    })
+}
+/*
+*   更新用户资料
+* */
+function updateUserInfo(jsonBody,callback) {
+    let url = 'https://api.netease.im/nimserver/user/updateUinfo.action';
+    getCheck(url,jsonBody,(err,bodyData)=>{
+        if(err){
+            console.log(err)
+            callback(err,null);
+            return
+        }
+        callback(null,bodyData);
+    })
+}
+/*
+*  向APP推送消息
+* */
+function pushNotify(jsonBody,callback) {
+    let url = 'https://api.netease.im/nimserver/msg/sendAttachMsg.action'
+    getCheck(url,jsonBody,(err,bodyData)=>{
+        if(err){
+            callback(err,null);
+            return
+        }
+        callback(null,bodyData);
+    })
+}

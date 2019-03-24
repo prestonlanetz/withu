@@ -1,3 +1,4 @@
+
 Book页面   
 	I、主页面加载后读取本地题库数据，生成JSX全部显示；
 	II、每一本题库显示后，会读取本地错误题库、收藏题、已做题库、题目长度、正确率等信息
@@ -29,10 +30,40 @@ APP login登录界面
 	react-native-progress                 //进度条
 	native-base                               //集成的UI组件库
 	react-native-image-picker        //选择照片
+	react-native-image-crop-picker  //更加方便的照片选择组件 ，注意IOS安卓配置不同
 	react-native-netease-im     //网易云信IM的插件，注意安卓与IOS配置不同
-	react-native-smscode-count-down  //短信验证码倒计时
+	react-native-smscode-count-down  //短信验证码倒计时，有BUG 自己实现了，见tiku3
 	react-native-loader   //加载中动画
 	react-native-spinkit    //更多加载动画   ,推荐
+	react-native-simple-toast   //自动消失的提示组件 
+	react-native-webp    //让react native iOS 支持Webp格式  安卓看Image说明
+	react-native-swipe-list-view  //侧滑显示删除按钮
+	react-native-geocoder    //获取经纬度
+	react-native-maps         //地图显示
+	react-native-modal    //更快的modal
+	react-native-swipe-cards    //仿探探滑动喜欢
+	react-native-scrollable-tab-view    //滑动切换界面导航
+	time-interval   //时间间隔显示
+	nd-datetime   //时间格式化
+
+	react-native-zss-rich-text-editor    //富文本编辑器，安卓需要单独设置grade文件 
+		依赖组件： react-native-webview-bridge-updated
+	react-native-qiniu   //七牛云SDK
+	react-native-render-html  //显示HTML 文档成界面
+	react-native-invertible-scroll-view  //ListView 内容倒置
+	react-native-keyboard-aware-scroll-view       //表单键盘遮挡解决方案
+	npm install native-echarts --save  //图表绘制
+        react-native-image-zoom-viewer    //大图预览
+	npm i react-native-modalbox  // 更好的向上滑动出的modal
+	npm install --save react-native-popup-dialog   //动画弹窗放大,有点卡顿，建议换成下面的
+	npm i react-native-awesome-alerts --save     //自带放大效果的告警窗口
+	npm i -S react-native-video  //音乐及视频播放组件  需要link
+	react-native-action-picker     //原生样式的 下部弹出选择按钮
+	react-native-text-ticker  //文字滚动显示组件
+	react-native-photo-gallery  //带有图片导航功能的图片浏览组件
+	react-native-icon-badge //图标角标
+	elasticsearch  //elasticsearch 库
+	react-native-fs  //文件管理库，二维码保存到本地时 用到了
 
 3、本地数据格式
 	3.1、题库信息简介：(简介、各类型题目数量)
@@ -116,5 +147,66 @@ APP login登录界面
                                 sinChoice:[]      //单
                             }
                     }
+	3.7 收藏数据
+		key: 'collect',  // 注意:请不要在key中使用_下划线符号!
+                userId:global.imaccount,
+                data: res.collect,
+	3.8 点赞
+		key: 'upvotedPost',
+                userId : global.imaccount,
+                data:{
+                     post: postStr,  //用双竖线将post的唯一ID分开（||reply_id||..........）
+                },
+	3.9 关注
+		key: 'follow',
+                userId : global.imaccount,
+                data:{
+                     follow: postStr,  //用双竖线将follow的唯一ID分开（||uid||..........）
+                },
+	3.10 是否开启配对
+		key: 'showFriendMatch',
+                id:globle.imaccount,
+                data: {
+                    open:true
+                },
+	3.11 是否已经登陆
+	global.storage.save({
+                    key: 'logined',  // 注意:请不要在key中使用_下划线符号!
+                    data: {
+				islogin:true,
+                                user:global.user,
+                                imaccount:global.imaccount,
+				password:res.token,
+				token:token
+			},
+                    expires: null
+                });
+	3.12 题库考试时间
+		global.storage.save({
+                    	key: 'bookCountDate',  // 注意:请不要在key中使用_下划线符号!
+                    	id:bookID
+			data: {
+				time:timestrap,
+			},
+                    expires: null
+                });
+	
 4、全局变量
-	global.imAccount = ID   //网易账号，在登录时创建
+	global.imaccount = ID   //网易账号，在登录时创建
+	 暂时停用   global.uid   // nodebb uid 登录时获取创建   
+	global.userImg = string  // 用户头像地址
+       global.user   //登陆后查询服务器获取的用户信息
+	global.upvoted   //记录用户所有点赞过的评论，字符串  ||213214112312||2343223532
+	global.recommendUser
+	global.boughtBook  //已经购买过的题库，在获取商店数据时返回
+	global.needLogin    //直接进入软件界面，需要登陆
+	global.freshGoalTime   //上次刷新目标时间，小于当日0点时间搓则再次刷新
+        global.myFansList   //我的粉丝列表
+	global.myFollowsList  //我的关注列表
+5、密码加密
+	md5(md5(password)+preston)
+
+	
+
+
+		

@@ -7,11 +7,9 @@
 function postData(url,DataString,callback){
   //创建表单对象
   var formData = new FormData;
-  //导入表单数据,遍历jsonData对象
-
+    //导入表单数据,遍历jsonData对象
     formData.append('clientUpdate',DataString); //
-
-  //创建XMLHttpRequest()对象
+    //创建XMLHttpRequest()对象
   var xhr = new XMLHttpRequest();
   //让浏览器跨域也上传cookie，以支持服务器session
   xhr.withCredentials = true;
@@ -21,13 +19,13 @@ function postData(url,DataString,callback){
   xhr.open('post',url,true);
 
   //注册回调函数，当服务器返回数据时执行该函数
-  //设置ajax请求头
-  xhr.setRequestHeader("Origin", "127.0.0.1");
+  //设置ajax请求头(不要自己设置请求头，会自动添加)
+  // xhr.setRequestHeader("Origin", "http://127.0.0.1:8000");
 
-  // 允许服务器接受跨域cookie  session
-  xhr.setRequestHeader("Access-Control-Allow-Credentials", "true");
-
-
+  // 允许服务器接受跨域cookie  session？ 应该是上面的withCredentials已经开启
+  // xhr.setRequestHeader("Access-Control-Allow-Credentials", "true");
+  //   xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+  //   xhr.setRequestHeader("Content-Type","multipart/form-data");
   xhr.onload = (e)=>{
     //如果返回的状态码为成功
     if(xhr.status == 200){
@@ -45,7 +43,6 @@ function postData(url,DataString,callback){
   xhr.onerror = (e)=>{
     alert('请求错误',e)
   }
-
   xhr.send(formData);
 };
 module.exports = postData;

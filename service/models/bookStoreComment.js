@@ -8,15 +8,18 @@ var db = require('./db');
 
 //1、create schema
 var BookStoreCommentSchema = new mongoose.Schema({
-    id : {type : Number},        //安规题库ID五位数，前两位为级别，第三位表示专业，第四位五位表示编号（00 0 01表示国网公司级 变电 第一本）
-    title: {type : String},      //
-    content: {type : String},
-    time: {type : Number},  //评论发布日期 20170326
-    like: {type : Number},   //点赞次数
-    disLike :{type : Number} //吐槽次数
+    star:{type : Number},
+    book_id: { type: String},   //   安规题库id
+    reply_id : { type: String },
+    title: {type : String},      //标题
+    content: { type: String },
+    userID: { type: String },
+    author_img:{ type: String },
+    author_name:{ type: String },
+    create_at: { },
 });
 
-var BookStoreCommentModel = db.model('bookstorecomment',BookStoreCommentSchema);
+var BookStoreCommentModel = db.model('bookStoreComment',BookStoreCommentSchema);
 
 //模型输出
 module.exports = BookStoreCommentModel;
